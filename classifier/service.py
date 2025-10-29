@@ -1,0 +1,1 @@
+# zaenkrat bo še vse lokalno in v fazi testiranja tako da ne rabim 
