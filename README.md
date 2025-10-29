@@ -40,4 +40,4 @@ Optional `.env` variables:
 - `LOW_THRESH` (default: `0.35`)
 - `HIGH_THRESH` (default: `0.65`)
 - `OPENROUTER_API_KEY` (optional, for fallback)
-- `OPENROUTER_MODEL` (default: `x-ai/grok-4-fast`)
+- `OPENROUTER_MODEL` (default: `x-ai/grok-4-fast`)# classifier-bool
