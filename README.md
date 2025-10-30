@@ -2,6 +2,17 @@
 
 Boolean classifier for "test" vs "other" intent using sentence embeddings and calibrated logistic regression.
 
+## How It Works
+
+**Architecture**: Text → Normalize → Embed → Logistic Regression → Calibrated Probabilities
+
+**Tech Stack**:
+- **Embeddings**: Sentence Transformers (`BAAI/bge-m3` by default) converts text to dense vectors
+- **Classifier**: Scikit-learn Logistic Regression with isotonic calibration for probability calibration
+- **Features**: Balanced class weights, normalized embeddings, reliability plots
+
+**Training Flow**: CSV data → text normalization → sentence embeddings → calibrated logistic regression → threshold-based classification (low/high confidence zones)
+
 ## Setup
 
 ```bash
